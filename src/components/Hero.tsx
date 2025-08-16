@@ -1,6 +1,6 @@
 import { Download, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/foto-profile-background.jpg';
 
 const Hero = () => {
   const handleDownloadCV = () => {
@@ -23,17 +23,17 @@ const Hero = () => {
           <div className="mb-8">
             <img
               src={profilePhoto}
-              alt="John Doe Profile"
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto shadow-elegant border-4 border-accent/20 hover:scale-105 transition-transform duration-300"
+              alt="Ilun Raafi Profile"
+              className="w-40 h-40 md:w-60 md:h-60 rounded-full mx-auto shadow-elegant border-4 border-accent/20 hover:scale-105 transition-transform duration-300"
             />
           </div>
 
           {/* Name and Title */}
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">
-            John Doe
+            Ilun Raafi Septian
           </h1>
           <h2 className="text-xl md:text-2xl text-accent font-medium mb-6">
-            Full Stack Developer
+            Software Development & UI/UX Design Enthusiast
           </h2>
 
           {/* Description */}

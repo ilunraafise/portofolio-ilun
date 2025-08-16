@@ -46,7 +46,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('#home')}
               className="text-xl font-bold text-primary hover:text-accent transition-colors duration-300"
             >
-              John Doe
+              Portofolio-ilun
             </button>
           </div>
 
