@@ -1,26 +1,26 @@
-import { Code, Coffee, Lightbulb, Users } from 'lucide-react';
+import { Code, Lightbulb, Palette, Users } from 'lucide-react';
 
 const About = () => {
   const highlights = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "3+ Years Experience",
-      description: "Building scalable web applications"
+      title: "Full-stack Web Development",
+      description: "Creating end-to-end web solutions with Laravel, MySql, Tailwind CSS, React Js & Vue Js"
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Team Collaboration",
-      description: "Working with cross-functional teams"
+      icon: <Palette className="w-6 h-6" />,
+      title: "UI/UX Design",
+      description: "Designing intuitive and user-friendly interfaces with Figma"
     },
     {
       icon: <Lightbulb className="w-6 h-6" />,
       title: "Problem Solving",
-      description: "Finding creative solutions to challenges"
+      description: "Translating complex needs into efficient digital solutions"
     },
     {
-      icon: <Coffee className="w-6 h-6" />,
-      title: "Continuous Learning",
-      description: "Always exploring new technologies"
+      icon: <Users className="w-6 h-6" />,
+      title: "Collaboration & Leadership",
+      description: "Experience working with teams and contributing in organizational roles"
     }
   ];
 
@@ -44,20 +44,20 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Hello! I'm John, a passionate full-stack developer with over 3 years of experience 
-                in creating modern web applications. My journey in tech started with a curiosity 
-                about how websites work, and it has evolved into a deep love for problem-solving 
-                and building solutions that impact users positively.
+                Hello, my name Ilun Raafi Septian, i am an Information Systems graduate with a strong interest in UI/UX Design and Full-Stack Web Development. 
+                With an educational background that combines technology, design, and system analysis, 
+                I have the ability to build digital solutions that are functional while having an optimal user experience.
               </p>
               <p>
-                I specialize in React, Node.js, and modern web technologies, but I'm always eager 
-                to learn new tools and frameworks. When I'm not coding, you'll find me exploring 
-                the latest tech trends, contributing to open-source projects, or sharing knowledge 
-                with the developer community.
+                I have experience as a Computer Officer at the Ministry of State Secretariat of the Republic of Indonesia & as a Analyst Infrastructure Management & Optimization at the PT Pertamina Gas, 
+                Staff of the Research & Development Division of the Information Systems Student Association, 
+                as well as participating in UI/UX Design Certified Independent Study at GreatEdu. In the academic process, 
+                I worked on various projects, including the development of a web-based Computer-Based Test (CBT) using Laravel, MySQL, Tailwind CSS, and Figma. 
+                My expertise includes interface design, system development, and digital product testing and optimization.
               </p>
               <p>
-                I believe in writing clean, maintainable code and creating user experiences that 
-                are both beautiful and functional. Let's build something amazing together!
+                I am known as a detail-oriented person, quick to adapt, and happy to learn new technologies. Every project I work on is always oriented towards user needs and system efficiency. 
+                My goal is to develop a career in technology by contributing to the creation of digital products that are innovative, useful, and have a positive impact on society.
               </p>
             </div>
           </div>
