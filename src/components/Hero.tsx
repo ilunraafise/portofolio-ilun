@@ -4,8 +4,13 @@ import profilePhoto from '@/assets/foto-profile-background.jpg';
 
 const Hero = () => {
   const handleDownloadCV = () => {
-    // Placeholder for CV download functionality
-    console.log('Download CV clicked');
+    // Pastikan file CV ada di dalam folder `public`
+    const link = document.createElement('a');
+    link.href = '/Cv-Ilun-Raafi-Septian.pdf'; // Path ke CV di folder public
+    link.download = 'CV-Ilun-Raafi-Septian.pdf'; // Nama file saat diunduh
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleContactMe = () => {
