@@ -38,9 +38,9 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Passionate about creating elegant solutions to complex problems. 
-            I specialize in modern web technologies and love building applications 
-            that make a difference in people's lives.
+            I am an Information Systems graduate with a focus on UI/UX Design and Web Development. 
+            Experienced in working on projects from interface design to system implementation, 
+            including web-based CBT using Laravel, MySQL, Tailwind CSS, and Figma.
           </p>
 
           {/* CTA Buttons */}
