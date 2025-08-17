@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin} from 'lucide-react';
 import ContactForm from './ContactForm';
 
 const Contact = () => {
@@ -6,19 +6,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com"
+      value: "businessforilun@gmail.com",
+      href: "mailto:businessforilun@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      label: "Phone/Whats App",
+      value: "+62895606008376",
+      href: "https://wa.me/62895606008376"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Depok, Jawa Barat",
       href: null
     }
   ];
@@ -27,18 +27,13 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      href: "https://github.com/johndoe"
+      href: "https://github.com/ilunraafise"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/johndoe"
+      href: "https://www.linkedin.com/in/ilunraafiseptian/"
     },
-    {
-      icon: <Twitter className="w-6 h-6" />,
-      label: "Twitter",
-      href: "https://twitter.com/johndoe"
-    }
   ];
 
   return (
@@ -49,7 +44,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or just want to say hello? I'd love to hear from you!
+            Looking for a developer to bring your ideas to life? Let's discuss how I can help with your next project.
           </p>
         </div>
 
@@ -60,9 +55,8 @@ const Contact = () => {
               Let's Connect
             </h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Whether you have a question about my work, want to discuss a potential 
-              project, or just want to connect, feel free to reach out. I'm always 
-              open to interesting conversations and opportunities.
+              Have a question about my work, an idea for a project, or just want to connect? 
+              I'd love to hear from you I'm always open to new conversations and opportunities.
             </p>
 
             {/* Contact Details */}

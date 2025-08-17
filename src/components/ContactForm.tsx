@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Send, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -53,10 +54,22 @@ const ContactForm = () => {
 
     setIsSubmitting(true);
 
+    // Ganti dengan kredensial dari akun EmailJS Anda
+    const serviceID = 'service_l5u226n';
+    const templateID = 'template_0ey2w3h';
+    const publicKey = 'HiVI6y6nGXfzp8G46';
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      to_name: 'Ilun Raafi Septian', // Nama Anda untuk ditampilkan di template
+      message: formData.message,
+    };
+
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
+      // Mengirim email menggunakan EmailJS
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
+
       toast({
         title: "Message sent successfully!",
         description: "Thank you for your message. I'll get back to you soon.",
@@ -67,6 +80,7 @@ const ContactForm = () => {
       setFormData({ name: '', email: '', message: '' });
       setErrors({});
     } catch (error) {
+      console.error('Failed to send email:', error);
       toast({
         title: "Error sending message",
         description: "Please try again later or contact me directly.",
