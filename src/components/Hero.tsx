@@ -14,10 +14,7 @@ const Hero = () => {
   };
 
   const handleContactMe = () => {
-    const contactSection = document.querySelector('#contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.open('https://wa.me/62895606008376', '_blank', 'noopener,noreferrer');
   };
 
   return (
