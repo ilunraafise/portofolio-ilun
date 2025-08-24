@@ -3,6 +3,9 @@ import project1 from '@/assets/project-cbt.png';
 import project2 from '@/assets/project-waste-wallet.png';
 import project3 from '@/assets/project-dmetro.png';
 import project4 from '@/assets/project-jakaya.png';
+import sertifikatBNSP from '@/assets/analis-program-bnsp.jpg';
+import sertifikatBNSP1 from '@/assets/sistem-analis-bnsp.jpg';
+import sertifikatStupen from '@/assets/stupen.jpg';
 
 
 const Projects = () => {
@@ -38,6 +41,30 @@ const Projects = () => {
     }
   ];
 
+  const certifications = [
+    {
+      title: "Program Analyst",
+      issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+      description: "This BNSP certification demonstrates my professional competence in system analysis and development, ensuring solutions meet both technical and industry standards.",
+      image: sertifikatBNSP,
+      url: "https://drive.google.com/file/d/1H_3ZnazEUEX2cJOHRBUTy3wvgaj3TgNG/view?usp=sharing"
+    },
+    {
+      title: "System Analyst",
+      issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+      description: "This certification is awarded by BNSP as official recognition of my competency in system analysis, design, and implementation in accordance with national industry standards.",
+      image: sertifikatBNSP1,
+      url: "https://drive.google.com/file/d/1-REWmWZ4DRvPRlbbCjummaIMu9E7kPWW/view?usp=sharing"
+    },
+    {
+      title: "UI/UX Design Studi Independen Kampus Merdeka",
+      issuer: "GreatEdu",
+      description: "This certification acknowledges my competency in UI/UX design, covering user research, wireframing, prototyping, and usability testing to create user-centered digital products.",
+      image: sertifikatStupen,
+      url: "https://drive.google.com/file/d/1kFGaT0t6Lw3JFbgxaEElXUN20u8-2HgD/view?usp=sharing"
+    }
+  ];
+
   return (
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,6 +96,58 @@ const Projects = () => {
           >
             View all projects on GitHub →
           </button>
+        </div>
+
+        {/* Certifications Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Certifications</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              I am proud to hold the following certifications, which validate my skills and expertise.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {certifications.map((cert, index) => (
+              <div key={index} className="animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="bg-card rounded-lg border shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl h-full flex flex-col">
+                  <a href={cert.url} target="_blank" rel="noopener noreferrer">
+                    <img src={cert.image} alt={cert.title} className="w-full h-56 object-cover" />
+                  </a>
+                  <div className="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                      <h3 className="text-xl font-bold text-card-foreground mb-1">
+                        {cert.title}
+                      </h3>
+                      <p className="text-md font-medium text-muted-foreground mb-3">
+                        {cert.issuer}
+                      </p>
+                      <p className="text-sm text-muted-foreground">{cert.description}</p>
+                    </div>
+                    <div className="mt-6">
+                      <a href={cert.url} target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center bg-primary text-primary-foreground hover:bg-primary/90 font-medium py-2 px-4 rounded-md transition-colors duration-300">
+                        Visit Link
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Call to Action */}
+        <div className="text-center mt-12 animate-fade-in">
+          <p className="text-muted-foreground mb-4">
+            Want to see more of my certifications?
+          </p>
+          <button
+            onClick={() => window.open('https://drive.google.com/drive/folders/1Jf6NX0XMDjT2acQ2g_HtWY882XOuk7cy?usp=sharing', '_blank')}
+            className="text-accent hover:text-accent/80 font-medium transition-colors duration-300"
+          >
+            View all certificate on Gdrive →
+          </button>
+        </div>
+
         </div>
       </div>
     </section>
